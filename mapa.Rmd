@@ -30,7 +30,7 @@ library(lubridate)
 library(plotly)
 library(kableExtra)
 library(highcharter)
-setwd("C:/Users/Daniel/Desktop/CAMP_SOLID/Daniel795-lab.github.io")
+setwd("C:/Users/Daniel/Desktop/GranitosdeMostaza.github.io")
 ```
 
 

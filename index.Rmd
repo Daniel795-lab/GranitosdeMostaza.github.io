@@ -14,8 +14,8 @@ text-align: justify}
 
 ### Para comenzar te invitamos a compartir el afiche de la tercera campaña solidaria para que juntos sigamos ayudando a más familias!
 
-![](Capturas/dia_nino.jpg)
-![](Capturas/5ta_campana.jpg)
+<center>![](Capturas/dia_nino.jpg)</center>
+<center>![](Capturas/5ta_campana.jpg)</center>
 
 ---
 

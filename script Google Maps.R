@@ -11,7 +11,7 @@ library(lubridate) #sirve para manipular y darle un data.type a las fechas.
 library(ggrepel) #mejorar el etiquetado de los datos en un gr?fico
 #install.packages("printr")
 #install.packages("googledrive")
-setwd("C:/Users/Daniel/Desktop/CAMP_SOLID/gmaps")
+setwd("C:/Users/Daniel/Desktop/GranitosdeMostaza.github.io")
 getwd() #espacio de trabajo actualizado
 list.files()
 #https://docs.google.com/spreadsheets/d/e/2PACX-1vQawLKRruyLNHg1LSMjfxt0siwuj9ng_wxQlDM-a3aWUD1Z4LiVIP9E8lfrvAywQQUaluxVGFMlZhx5/pub?gid=1371277324&single=true&output=csv
