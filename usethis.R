@@ -9,3 +9,5 @@ usethis::use_github() #y conectar el proyecto a GitHub
 
 usethis::pr_pull_upstream()#bajo o descargo los cambios que hizo el colaborador
 usethis::pr_init("sitio_web")#crea rama denominada "sitio_web"
+devtools::build_site()#genera un .html en la carpeta docs
+usethis::pr_push()#envio los cambios, se realiza un pull request a mi mismo.
