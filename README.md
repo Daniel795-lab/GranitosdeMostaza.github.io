@@ -9,5 +9,3 @@ Repositorio para la creación de la página web de Granitos
 <!-- badges: end -->
 
 ### La mision de Granitos de Mostaza es servir a las familias del sector poniente de la capital mediante un plan de trabajo integral, con el fin de combatir el virus de la pobreza que sufren nuestros hermanos y hermanas.
-
-![](Capturas/Somos_Granitos.mp4)
