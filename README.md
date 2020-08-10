@@ -8,4 +8,4 @@
 
 A tráves de la entrega de mercadería, organización de ollas comunes, desayuno y once comunitarias.
 
-<center>![](Capturas/5ta_campana.gif)</center>
+[](Capturas/5ta_campana.gif)</center>
