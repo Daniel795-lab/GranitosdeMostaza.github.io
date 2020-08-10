@@ -12,3 +12,6 @@ usethis::pr_init("sitio_web")#crea rama denominada "sitio_web"
 devtools::build_site()#genera un .html en la carpeta docs
 usethis::pr_push()#envio los cambios, se realiza un pull request a mi mismo.
 usethis::pr_pull_upstream()
+
+#Crea README
+usethis::use_readme_rmd()
