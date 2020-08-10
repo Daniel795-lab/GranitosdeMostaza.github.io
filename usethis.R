@@ -15,4 +15,3 @@ usethis::pr_push()#envio los cambios, se realiza un pull request a mi mismo.
 
 #Crea README
 usethis::use_readme_rmd()#solo funciona cuando se crean nuevos paquetes
-devtools::build_readme()#crea readme.md
