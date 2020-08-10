@@ -1,5 +1,6 @@
 #librerias
 library(usethis)
+library(devtools)
 usethis::use_git_config(user.name = "Daniel795-lab", user.email = "diugalde@uc.cl")
 usethis::browse_github_token()
 usethis::edit_r_environ()
