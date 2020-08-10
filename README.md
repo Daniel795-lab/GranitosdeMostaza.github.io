@@ -1,5 +1,3 @@
-# GranitosdeMostaza.github.io
-Repositorio para la creación de la página web de Granitos
 # ¿Quiénes somos? de dónde surge la idea?
 
 ## Somos un grupo de jóvenes cristianos que anhelan incansablemente la justicia social soñada por Jesús de Nazaret hace dos mil años.
@@ -10,4 +8,4 @@ Repositorio para la creación de la página web de Granitos
 
 A tráves de la entrega de mercadería, organización de ollas comunes, desayuno y once comunitarias.
 
-![](Capturas/5ta_campana.gif)
+<center>![](Capturas/5ta_campana.gif)</center>
