@@ -11,3 +11,15 @@ git add -A
 git commit -m "Modificacion21"
 
 git push origin master
+
+git remote -v
+
+git remote set-url origin https://github.com/Daniel795-lab/GranitosdeMostaza.github.io.git
+
+git remote set-url upstream https://github.com/GranitosdeMostaza/GranitosdeMostaza.github.io.git
+
+git remote add upstream http://github.com/Gato/mi_repo_genial.git
+
+git push https://github.com/Daniel795-lab/apuntes_git.git Daniel
+
+git pull upstream master --ff-only
