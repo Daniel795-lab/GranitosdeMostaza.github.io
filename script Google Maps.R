@@ -1,12 +1,14 @@
 #1. Carga de paquetes y WD ----
 rm(list = ls())
 
+library(DataEditR)
 library(tidyverse) #es un universo de paquetes que integra ggplot, stringR, dplyr, tidyR(LONG-WIDE)
 library(readxl) #paquete para leer datos de excel
 library(sf)
 library(magrittr)
 library(mapview)
 library(printr)
+library(shiny)
 library(lubridate) #sirve para manipular y darle un data.type a las fechas.
 library(ggrepel) #mejorar el etiquetado de los datos en un gr?fico
 #install.packages("printr")
@@ -21,6 +23,7 @@ head(wti) #primeras 6 filas
 tail(wti) #ultimas 6 filas
 
 data_1 <- wti
+
 #2. Lectura e importacion de datos ----
 
 #sheets <- readxl::excel_sheets("CATASTRO INTERACTIVO.xlsx")
@@ -63,6 +66,24 @@ class(data_1$INTEGRANTES_GRUPO_FAMILIAR)
 data_1 <- data_1 %>% mutate(INTEGRANTES_GRUPO_FAMILIAR = as.integer(INTEGRANTES_GRUPO_FAMILIAR))
 class(data_1$INTEGRANTES_GRUPO_FAMILIAR)
 is.integer(data_1$INTEGRANTES_GRUPO_FAMILIAR)
+
+granitos_logo <- "Capturas/granitos.jpg"
+
+choferes <- data_edit(data_1,
+          col_bind = "CHOFER_DISTRIBUIDOR5",
+          col_options = list(CHOFER_DISTRIBUIDOR5 = c("Bryan",
+                                                      "Camila",
+                                                      "Fidel",
+                                                      "Samy",
+                                                      "Shirley",
+                                                      "Padre",
+                                                      "Andrea")),
+          logo = granitos_logo,
+          #logo_size = 100,
+          title = "Granitos de Mostaza",
+          save_as = "data_edit.csv",
+          write_fun = "write.table",
+          write_args = list(sep = ",", row.names = FALSE))
 #Exportar base de datos data_1
 write.csv(data_1, file = "FAMILIAS_agosto.csv", row.names = F)
 ##3.1. Google Maps----
