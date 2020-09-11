@@ -24,5 +24,10 @@ git remote add upstream http://github.com/Gato/mi_repo_genial.git
 git push https://github.com/Daniel795-lab/apuntes_git.git Daniel
 
 git pull upstream master --ff-only
+
+git config --global user.name 'Jane Doe'
+git config --global user.email 'jane@example.com'
+
+git config --global --list
 =======
 >>>>>>> 5fb4c644ed38137db11ddbd6dc90d2c9f8cf4bad
