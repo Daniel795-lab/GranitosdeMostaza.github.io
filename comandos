@@ -34,3 +34,13 @@ git config --global --list
 
 git checkout master
 git reset --hard upstream/master
+
+3. Deleting local branches in Git
+
+$ git branch -d feature/login
+
+4. Deleting remote branches in Git
+
+git push origin --delete feature/login
+
+
