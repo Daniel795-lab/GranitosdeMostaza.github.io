@@ -13,7 +13,7 @@ library(lubridate) #sirve para manipular y darle un data.type a las fechas.
 library(ggrepel) #mejorar el etiquetado de los datos en un gr?fico
 #install.packages("printr")
 #install.packages("googledrive")
-setwd("C:/Users/Daniel/Desktop/GranitosdeMostaza.github.io")
+setwd("C:/Users/56989/Desktop/Github/GranitosdeMostaza.github.io")
 getwd() #espacio de trabajo actualizado
 list.files()
 #https://docs.google.com/spreadsheets/d/e/2PACX-1vQawLKRruyLNHg1LSMjfxt0siwuj9ng_wxQlDM-a3aWUD1Z4LiVIP9E8lfrvAywQQUaluxVGFMlZhx5/pub?gid=1371277324&single=true&output=csv
@@ -57,7 +57,8 @@ data_1 <- data_1 %>%
          AYUDA_RECIBIDA = AYUDA_ENTREGADA,
          AYUDA_RECIBIDA2 = AYUDA_ENTREGADA2,
          AYUDA_RECIBIDA3 = AYUDA_ENTREGADA3,
-         AYUDA_RECIBIDA4 = AYUDA_ENTREGADA4)
+         AYUDA_RECIBIDA4 = AYUDA_ENTREGADA4,
+         AYUDA_RECIBIDA5 = AYUDA_ENTREGADA5)
 colnames(data_1)
 glimpse(data_1)
 str(data_1)
@@ -66,6 +67,8 @@ class(data_1$INTEGRANTES_GRUPO_FAMILIAR)
 data_1 <- data_1 %>% mutate(INTEGRANTES_GRUPO_FAMILIAR = as.integer(INTEGRANTES_GRUPO_FAMILIAR))
 class(data_1$INTEGRANTES_GRUPO_FAMILIAR)
 is.integer(data_1$INTEGRANTES_GRUPO_FAMILIAR)
+
+#4.1. Editar con el paquete DataEditR
 
 granitos_logo <- "Capturas/granitos.jpg"
 
@@ -89,12 +92,13 @@ write.csv(data_1, file = "FAMILIAS_agosto.csv", row.names = F)
 ##3.1. Google Maps----
 familias_apoyadas <- data_1 %>% filter(!is.na(CHOFER_DISTRIBUIDOR4)) %>% 
   select(DESCRIPCION, ID_FAMILIA, COMUNA, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, AYUDA_RECIBIDA, FECHA_AYUDA,
-         AYUDA_RECIBIDA2, FECHA_AYUDA2, AYUDA_RECIBIDA3, FECHA_AYUDA3, AYUDA_RECIBIDA4, FECHA_AYUDA4, lon_x, lat_y) %>%
+         AYUDA_RECIBIDA2, FECHA_AYUDA2, AYUDA_RECIBIDA3, FECHA_AYUDA3, AYUDA_RECIBIDA4, FECHA_AYUDA4,
+         AYUDA_RECIBIDA5, FECHA_AYUDA5, lon_x, lat_y) %>%
   view()
-count(familias_apoyadas) #122
+count(familias_apoyadas) #116
 
 #Exportar base de datos data_1
-write.csv(data_1, file = "FAMILIAS_agosto_GMAPS.csv", row.names = F)
+write.csv(familias_apoyadas, file = "Gmaps/FAMILIAS_Septiembre_GMAPS.csv", row.names = F)
 #3.2. Informacion para choferes
 familias <- data_1 %>% filter(!is.na(CHOFER_DISTRIBUIDOR4)) %>% 
   select(ID_FAMILIA, NOMBRE, DIRECCION, COMUNA, TELEFONO, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, 

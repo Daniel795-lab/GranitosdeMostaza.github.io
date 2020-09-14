@@ -12,7 +12,7 @@ text-align: justify}
 
 ---
 
-### Para comenzar te invitamos a colaborar con la celebración del "Día del Niñx" y a compartir el afiche de la quinta campaña solidaria para que juntos sigamos ayudando a más familias!
+### Para comenzar te invitamos a compartir el afiche de la sexta campaña solidaria para que juntos sigamos ayudando a más familias!
 
 <center>![](Capturas/entrevista.jpeg)</center>
 <center>![](Capturas/6ta_campana.gif)</center>

@@ -30,7 +30,6 @@ library(lubridate)
 library(plotly)
 library(kableExtra)
 library(highcharter)
-setwd("C:/Users/56989/Desktop/Github/GranitosdeMostaza.github.io")
 ```
 
 
@@ -59,7 +58,7 @@ familias_ayudadas <- familias_apoyadas %>%
 ```
 
 ```{r echo=FALSE, collapse=TRUE, message= F, warning = F, fig.align='center'}
-mapview(familias_ayudadas, zcol = "AYUDA_ACUMULADA", legend = T, layer.name = c("Ayuda entregada a familias"))
+mapview(familias_ayudadas, zcol = "AYUDA_ENTREGADA5", legend = T, layer.name = c("Ayuda entregada a familias"))
 
 ```
 <br>
@@ -70,7 +69,7 @@ mapview(familias_ayudadas, zcol = "AYUDA_ACUMULADA", legend = T, layer.name = c(
 
 ```{r echo=FALSE, message= F, warning = F}
 attach(familias_ayudadas)
-b <- table(COMUNA, AYUDA_ACUMULADA)
+b <- table(COMUNA, AYUDA_ENTREGADA5)
 
 kable(b, align = "l") %>%
   kable_styling(full_width = T, bootstrap_options = "hover") %>%
